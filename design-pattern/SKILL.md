@@ -1,13 +1,17 @@
 ---
-name: gof-design-patterns
+name: design-pattern
 description: Helps understand and apply the 23 classic GoF design patterns to solve common software design problems
 ---
 
-# GoF Design Patterns
+# Design Patterns
 
-## What are GoF Design Patterns?
+## What are Design Patterns?
 
-Design patterns are reusable solutions to common problems in software design. The GoF patterns are divided into three categories:
+Design patterns are reusable solutions to common problems in software design. This skill covers both classic GoF (Gang of Four) patterns and other widely-used design patterns.
+
+## GoF Design Patterns
+
+The GoF patterns are divided into three categories:
 
 ### Creational Patterns (5)
 
@@ -59,11 +63,42 @@ Patterns that deal with communication between objects:
 | Adapter | Make incompatible interfaces work together | Integrate with legacy code |
 | Template Method | Define algorithm skeleton | Common algorithm with varying steps |
 
+## Other Design Patterns
+
+Beyond GoF patterns, this skill also covers:
+
+### Enterprise Patterns
+
+Patterns commonly used in enterprise application architecture:
+
+- **Repository Pattern** - Mediates between domain and data mapping layers
+- **Unit of Work** - Maintains a list of objects affected by a business transaction
+- **Data Mapper** - Maps data between objects and database
+- **Service Layer** - Defines application's boundary and encapsulates business logic
+
+### Architectural Patterns
+
+High-level patterns for structuring applications:
+
+- **MVC (Model-View-Controller)** - Separates application into three interconnected components
+- **MVVM (Model-View-ViewModel)** - Facilitates separation of UI development from business logic
+- **Clean Architecture** - Creates maintainable systems independent of frameworks and UI
+- **Hexagonal Architecture (Ports and Adapters)** - Isolates core logic from external concerns
+
+### Concurrency Patterns
+
+Patterns for handling concurrent operations:
+
+- **Producer-Consumer** - Separates data production from consumption
+- **Read-Write Lock** - Allows concurrent reads but exclusive writes
+- **Thread Pool** - Manages a pool of worker threads
+
 ## Detailed Pattern Documentation
 
 For in-depth explanations with code examples, refer to:
 - [Strategy Pattern](strategy-pattern.md)
 - [Decorator Pattern](decorator-pattern.md)
+- [Repository Pattern](repository-pattern.md)
 
 ## Key Principles
 
@@ -84,11 +119,12 @@ When analyzing code or design problems:
    - Is there a recurring design problem?
    - Would a pattern provide clear benefits (flexibility, maintainability)?
    - Is the complexity justified by the problem?
-3. Explain which pattern(s) could help and why
-4. Provide implementation guidance with code examples
-5. Discuss trade-offs and alternatives
-6. Ensure the pattern doesn't add unnecessary complexity
-7. Highlight the benefits and potential drawbacks
+3. Consider patterns from all categories (GoF, Enterprise, Architectural, Concurrency)
+4. Explain which pattern(s) could help and why
+5. Provide implementation guidance with code examples
+6. Discuss trade-offs and alternatives
+7. Ensure the pattern doesn't add unnecessary complexity
+8. Highlight the benefits and potential drawbacks
 
 ### When to Use Patterns
 
